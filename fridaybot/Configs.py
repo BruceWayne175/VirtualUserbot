@@ -31,7 +31,7 @@ if ENV:
             "HASH_TO_TORRENT_API", "https://example.com/torrent/{}"
         )
         # This is required for the @telegraph functionality.
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "VirtualUserbot")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "BruceWayne")
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         DEEP_API_KEY = os.environ.get("DEEP_API_KEY", None)
@@ -146,7 +146,7 @@ if ENV:
         DEEP_AI = os.environ.get("DEEP_AI", None)
         TAG_LOG = os.environ.get("TAG_LOG", None)
         ENABLE_ASSISTANTBOT = os.environ.get("ENABLE_ASSISTANTBOT", "ENABLE")
-        EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", "🔥")
+        EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", "🦋")
         TAG_FEATURE = os.environ.get("TAG_FEATURE", "DISABLE")
         JTM_CHANNEL_ID = int(os.environ.get("JTM_CHANNEL_ID", False))
         JTM_CHANNEL_USERNAME = os.environ.get("JTM_CHANNEL_USERNAME", None)
@@ -159,14 +159,14 @@ if ENV:
         GPLINKS_API_KEY = os.environ.get("GPLINKS_API_KEY", None)
         OPEN_LOAD_KEY = os.environ.get("OPEN_LOAD_KEY", None)
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/Inukaasith/VirtualUserbot"
+            "UPSTREAM_REPO", "https://github.com/BruceWayne175/VirtualUserbot"
         )
         ALIVE_IMAGE = os.environ.get(
-            "ALIVE_IMAGE", "https://telegra.ph/file/4e1364fb18f899ad47dec.png"
+            "ALIVE_IMAGE", "https://telegra.ph/file/9de90ce6fb5093f92db7c.jpg"
         )
         ASSISTANT_START_PIC = os.environ.get(
             "ASSISTANT_START_PIC",
-            "https://telegra.ph/file/4e1364fb18f899ad47dec.png",
+            "https://telegra.ph/file/9de90ce6fb5093f92db7c.jpg",
         )
         TESSDATA_PREFIX = os.environ.get(
             "TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata"
