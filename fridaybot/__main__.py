@@ -50,10 +50,10 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
             path1 = Path(f.name)
             shortname = path1.stem
             start_assistant(shortname.replace(".py", ""))
-    sed.info("VirtualUserbot And Assistant Bot Have Been Installed Successfully !")
+    sed.info("Userbot And Assistant Bot Have Been Installed Successfully !")
 else:
-    sed.info("VirtualUserbot Has Been Installed Sucessfully !")
-    sed.info("You Can Visit @InfinityJE For Any Support Or Doubts")
+    sed.info("Userbot Has Been Installed Sucessfully !")
+    sed.info("You Can Contact @BruceSL For Any Support Or Doubts")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
