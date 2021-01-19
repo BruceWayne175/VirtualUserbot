@@ -381,7 +381,7 @@ async def check_if_subbed(channel_id, event, bot):
 
 async def _ytdl(url, is_it, event, tgbot):
     await event.edit(
-        "`Ok Downloading This Video / Audio - Please Wait.` \n**Powered By @VirtualUserbot**"
+        "`Ok Downloading This Video / Audio - Please Wait.` \n**Powered By @BruceSL**"
     )
     if is_it:
         opts = {
