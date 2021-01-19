@@ -16,11 +16,11 @@ from fridaybot.modules import inlinestats
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
-    WARN_PIC = "https://telegra.ph/file/0e7a45ed44e17ce68d8cd.png"
+    WARN_PIC = "https://telegra.ph/file/9de90ce6fb5093f92db7c.jpg"
 else:
     WARN_PIC = PMPERMIT_PIC
 LOG_CHAT = Config.PRIVATE_GROUP_ID
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "VirtualUserbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Bruce Wayne"
 
 if lang == "si":
 
@@ -29,7 +29,7 @@ if lang == "si":
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query.startswith("VirtualUserbot"):
+        if event.query.user_id == bot.uid and query.startswith("Bruce Wayne"):
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_HELP, "helpme")
             result = builder.article(
@@ -42,11 +42,11 @@ if lang == "si":
         elif event.query.user_id == bot.uid and query == "stats":
             result = builder.article(
                 title="Stats",
-                text=f"**Showing Stats For {DEFAULTUSER}'s VirtualUserbot** \nNote --> Only Owner Can Check This \n(C) [VirtualUserbot](https://github.com/inukaasith/virtualuserbot)",
+                text=f"**Showing Stats For {DEFAULTUSER}'s Bruce Wayne** \nNote --> Only Owner Can Check This \n(C) [Bruce Wayne](https://t.me/BruceSL)",
                 buttons=[
                     [custom.Button.inline("Show Stats ?", data="terminator")],
-                    [Button.url("Developed By", "https://github.com/Inukaasith")],
-                    [Button.url("Support Chat❤️", "t.me/InfinityJE")],
+                    [Button.url("Developed By", "https://t.me/BruceSL")],
+     
                 ],
             )
             await event.answer([result])
@@ -148,7 +148,7 @@ if lang == "si":
         yt_dl_data = event.data_match.group(1).decode("UTF-8")
         link_s = yt_dl_data
         if event.query.user_id != bot.uid:
-            text = f"Please Get Your Own VirtualUserbot And Don't Waste My Resources"
+            text = f"Please Get Your Own Userbot And Don't Waste My Resources"
             await event.answer(text, alert=True)
             return
         is_it = True
@@ -159,7 +159,7 @@ if lang == "si":
         yt_dl_data = event.data_match.group(1).decode("UTF-8")
         link_s = yt_dl_data
         if event.query.user_id != bot.uid:
-            text = f"Please Get Your Own VirtualUserbot And Don't Waste My Resources"
+            text = f"Please Get Your Own Userbot And Don't Waste My Resources"
             await event.answer(text, alert=True)
             return
         is_it = False
@@ -169,7 +169,7 @@ if lang == "si":
     async def rip(event):
         link_s = event.pattern_match.group(1)
         if event.query.user_id != bot.uid:
-            text = f"Please Get Your Own VirtualUserbot And Don't Waste My Resources."
+            text = f"Please Get Your Own Userbot And Don't Waste My Resources."
             await event.answer(text, alert=True)
             return
         await _phdl(link_s, event, tgbot)
@@ -274,11 +274,11 @@ if lang == "si":
             ] + [
                 (
                     custom.Button.inline(
-                        "⏪ Previous", data="{}_prev({})".format(prefix, modulo_page)
+                        "🔴 Previous", data="{}_prev({})".format(prefix, modulo_page)
                     ),
-                    custom.Button.inline("Close", data="close"),
+                    custom.Button.inline("【Close】", data="close"),
                     custom.Button.inline(
-                        "Next ⏩", data="{}_next({})".format(prefix, modulo_page)
+                        "Next 🔴", data="{}_next({})".format(prefix, modulo_page)
                     ),
                 )
             ]
@@ -305,15 +305,15 @@ else:
         elif event.query.user_id == bot.uid and query == "stats":
             result = builder.article(
                 title="Stats",
-                text=f"**Showing Stats For {DEFAULTUSER}'s VirualUserbot** \nNote --> Only Owner Can Check This \n(C) @VirtualUserbot",
+                text=f"**Showing Stats For {DEFAULTUSER}'s Bruce Wayne** \nNote --> Only Owner Can Check This \n(C) @BruceSL",
                 buttons=[
                     [custom.Button.inline("Show Stats ?", data="terminator")],
                     [
                         Button.url(
-                            "Repo Here", "https://github.com/inukaasith/virtualuserbot"
+                            "Contact", "https://t.me/BruceSL"
                         )
                     ],
-                    [Button.url("Join Channel ❤️", "t.me/infinity_bots")],
+                    [Button.url("🧿 Join Channel 🧿", "t.me/MusicHubSL")],
                 ],
             )
             await event.answer([result])
@@ -373,7 +373,7 @@ else:
     )
     async def on_plug_in_callback_query_handler(event):
         if not event.query.user_id == bot.uid:
-            sedok = "Who The Fuck Are You? Get Your Own VirtualUserbot ."
+            sedok = "Who The Fuck Are You? Get Your Own Userbot ."
             await event.answer(sedok, cache_time=0, alert=True)
             return
         plugin_name = event.data_match.group(1).decode("UTF-8")
@@ -382,7 +382,7 @@ else:
                 f"**🦹‍♀️ PLUGIN NAME 🦹‍♀️ :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
             )
         reply_pop_up_alert = help_string
-        reply_pop_up_alert += "\n\n**(C) @VirtualUserbot** ".format(plugin_name)
+        reply_pop_up_alert += "\n\n**(C) @BruceSL** ".format(plugin_name)
         if len(reply_pop_up_alert) >= 4096:
             crackexy = "`Pasting Your Help Menu.`"
             await event.answer(crackexy, cache_time=0, alert=True)
@@ -415,7 +415,7 @@ else:
         yt_dl_data = event.data_match.group(1).decode("UTF-8")
         link_s = yt_dl_data
         if event.query.user_id != bot.uid:
-            text = f"Please Get Your Own VirtualUserbot And Don't Waste My Resources"
+            text = f"Please Get Your Own Userbot And Don't Waste My Resources"
             await event.answer(text, alert=True)
             return
         is_it = True
@@ -426,7 +426,7 @@ else:
         yt_dl_data = event.data_match.group(1).decode("UTF-8")
         link_s = yt_dl_data
         if event.query.user_id != bot.uid:
-            text = f"Please Get Your Own Friday And Don't Waste My Resources"
+            text = f"Please Get Your Own Userbot And Don't Waste My Resources"
             await event.answer(text, alert=True)
             return
         is_it = False
@@ -436,7 +436,7 @@ else:
     async def rip(event):
         link_s = event.pattern_match.group(1)
         if event.query.user_id != bot.uid:
-            text = f"Please Get Your Own VirtualUserbot And Don't Waste My Resources."
+            text = f"Please Get Your Own Userbot And Don't Waste My Resources."
             await event.answer(text, alert=True)
             return
         await _phdl(link_s, event, tgbot)
@@ -467,8 +467,8 @@ else:
         await event.answer("Back", cache_time=0, alert=False)
         # This Is Copy of Above Code. (C) @SpEcHiDe
         buttons = paginate_help(0, CMD_HELP, "helpme")
-        sed = f"""VirtualUserbot Userbot Modules Are Listed Here !\n
-    For More Help or Support contact {DEFAULTUSER} \nCurrently Loaded Plugins: {len(CMD_LIST)}\nCurrently using Language - English (Standard)"""
+        sed = f"""📒Bruce Wayne's Modules Are Listed Here !\n
+🆘For More Help or Support contact {DEFAULTUSER} \n🟢Currently Loaded Plugins: {len(CMD_LIST)}\n🌍Currently using Language - English (Standard)"""
         await event.edit(message=sed, buttons=buttons)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"whattalk")))
@@ -541,11 +541,11 @@ else:
             ] + [
                 (
                     custom.Button.inline(
-                        "⏪ Previous", data="{}_prev({})".format(prefix, modulo_page)
+                        "🔴 Previous", data="{}_prev({})".format(prefix, modulo_page)
                     ),
-                    custom.Button.inline("Close", data="close"),
+                    custom.Button.inline("【Close】", data="close"),
                     custom.Button.inline(
-                        "Next ⏩", data="{}_next({})".format(prefix, modulo_page)
+                        "Next 🔴", data="{}_next({})".format(prefix, modulo_page)
                     ),
                 )
             ]
@@ -558,7 +558,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy VirtualUserbot To Get Your Own Assistant, Repo Link [Here](https://github.com/inukaasith/virtualUserbot)",
+            text=f"You Can't Use This Bot. \nDeploy Userbot To Get Your Own Assistant, Contact Me [Here](https://t.me/BruceSL)",
         )
         await event.answer([resultm])
         return
@@ -639,7 +639,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy VirtualUserbot To Get Your Own Assistant, Repo Link [Here](https://github.com/inukaasith/virtualuserbot)",
+            text=f"You Can't Use This Bot. \nDeploy Userbot To Get Your Own Assistant, Contact Me [Here](https://t.me/BruceSL)",
         )
         await event.answer([resultm])
         return
@@ -693,7 +693,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy VirtualUserbot To Get Your Own Assistant, Repo Link [Here](https://github.com/inukaasith/virtualuserbot)",
+            text=f"You Can't Use This Bot. \nDeploy Userbot To Get Your Own Assistant, Contact Me [Here](https://t.me/BruceSL)",
         )
         await event.answer([resultm])
         return
@@ -737,7 +737,8 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy virtualuserbot  To Get Your Own Assistant, Repo Link [Here](https://github.com/inukaasith/virtualuserbot)",
+            text=f"You Can't Use This Bot. \nDeploy Userbot To Get Your Own Assistant, Contact Me [Here](https://t.me/BruceSL)",
+
         )
         await event.answer([resultm])
         return
@@ -783,7 +784,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy VirtualUserbot To Get Your Own Assistant, Repo Link [Here](https://github.com/inukaasith/virtualuserbot)",
+            text=f"You Can't Use This Bot. \nDeploy Userbot To Get Your Own Assistant, Contact Me [Here](https://t.me/BruceSL)",
         )
         await event.answer([resultm])
         return
@@ -817,7 +818,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy VirtualUserbot To Get Your Own Assistant, Repo Link [Here](https://github.com/inukaasith/VirtualUserbot)",
+            text=f"You Can't Use This Bot. \nDeploy Userbot To Get Your Own Assistant, Contact Me [Here](https://t.me/BruceSL)",
         )
         await event.answer([resultm])
         return
