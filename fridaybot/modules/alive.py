@@ -39,23 +39,23 @@ def get_readable_time(seconds: int) -> str:
 
 
 uptime = get_readable_time((time.time() - Lastupdate))
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "VirtualUserbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Bruce Wayne"
 PM_IMG = Config.ALIVE_IMAGE
-pm_caption = f" **\n   \n🔥 {DEFAULTUSER} VIRTUALUSERBOT IS AT YOUR SERVICE 🔥** \n\n"
-pm_caption += "➣ **SYS**                        `នƴន ʀᴜɴɴɪɢ⋆ 🏃`\n"
-pm_caption += "➣ **Telethon**                `₁.₁₅.₀ ` \n"
-pm_caption += "➣ **Python**                   `₃.₇.₄ ` \n"
-pm_caption += f"➣ **Uptime**                  `{uptime}` \n"
-pm_caption += "➣ **Realised By**            @Infinity_Bots\n"
-pm_caption += "➣ **Branch**                  `master`\n"
-pm_caption += f"➣ **Version**                  `{currentversion}`\n"
-pm_caption += f"➣ **My Boss**                {DEFAULTUSER} \n"
-pm_caption += "➣ **RDP**                        `Azureˢˢˡ`\n"
-pm_caption += "➣ **License**                  [GNU GPLv3.0](github.com/inukaasith/virtualuserbot/blob/master/LICENSE)\n"
-pm_caption += "➣ **Copyright**             [@virtualuserbot](https://github.com/inukaasith/virtualuserbot)\n"
-pm_caption += "➣ **Check **                   `.stat`. \n\n"
-pm_caption += "➣ **Contact Dev**             [Dev](https://t.me/InukaASiTH)\n"
-pm_caption += "➣ **Contact Mod**             [Mod](https://t.me/Zzlll_lllzZ)\n"
+pm_caption = f" **\n   \n🔥 {DEFAULTUSER} IS AT YOUR SERVICE 🔥** \n\n"
+pm_caption += "➻ **SYS**                        `នƴន ʀᴜɴɴɪɢ⋆ 🏃`\n"
+pm_caption += "➻ **Telethon**                `₁.₁₅.₀ ` \n"
+pm_caption += "➻ **Python**                   `₃.₇.₄ ` \n"
+pm_caption += f"➻ **Uptime**                  `{uptime}` \n"
+pm_caption += "➻ **Realised By**            @BruceSL\n"
+pm_caption += "➻ **Branch**                  `master`\n"
+pm_caption += f"➻ **Version**                  `{currentversion}`\n"
+pm_caption += f"➻ **My Boss**                {DEFAULTUSER} \n"
+pm_caption += "➻ **RDP**                        `Azureˢˢˡ`\n"
+
+pm_caption += "➻ **Copyright**             [Bruce Wayne](https://t.me/BruceSL)\n"
+pm_caption += "➻ **Check **                   `.stat`. \n\n"
+pm_caption += "➻ **Contact Dev**             [Dev](https://t.me/BruceSL)\n"
+
 
 
 @friday.on(friday_on_cmd(pattern=r"alive"))
